@@ -69,12 +69,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\Padrao.js" />
+    <Content Include="Temas\Padrao\Css\Padrao.css" />
+    <Content Include="Temas\Padrao\Imagens\HtmlPage1.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Temas\Padrao\MasterPage\Padrao.Master.cs">
+      <DependentUpon>Padrao.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Temas\Padrao\MasterPage\Padrao.Master.designer.cs">
+      <DependentUpon>Padrao.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Temas\Padrao\MasterPage\Padrao.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -82,6 +92,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
